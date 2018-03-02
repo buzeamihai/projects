@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Comment Box</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="comment-box">
+    <form action="#" class="clearfix" class="commentForm">
+      <label class="labels">
+        <textarea name="comment" class="comment-box__field" placeholder="Adauga un comentariu"></textarea>
+      </label>
+      <label class="labels">
+        <input placeholder="Email" type="email" class="email-field">
+      </label>
+      <label class="labels">
+        <input placeholder="Url imagine" class="image-field" type="text">
+      </label>
+      <button type="submit" class="comment-box__add-btn labels">Add Comment</button>
+    </form>
+    <div class="comments">
+      <div class="comment">
+        <img src="http://lorempixel.com/70/70/" alt="imagine">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, laudantium?</p>
+        <span>mihai@mihai.com</span>
+        <a class="comment__delete-btn" href="#">X</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="mainn.js" type="text/javascript"></script>
+</body>
+
+</html>

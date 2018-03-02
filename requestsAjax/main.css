@@ -1,0 +1,19 @@
+body {
+    background-color: #FFE8D9;
+}
+
+.infos {
+    color: #DF9A6C;
+    border-bottom: 1px solid #2e2e2e;
+    margin-bottom: 10px;
+}
+
+.title {
+    color: #AF8D76;
+}
+
+h1 {
+    color: #8F847C;
+    text-align: center;
+    text-transform: uppercase;
+}

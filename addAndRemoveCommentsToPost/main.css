@@ -1,0 +1,39 @@
+.comment-box__field {
+    height: 100px;
+    width: 300px;
+  }
+    
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .comment-box {
+    border: 1px solid blue;
+  }
+  
+  .comment {
+    position: relative;
+    width: 50%;
+  }
+  
+  .comment__delete-btn {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    text-decoration: none;
+  }
+  
+  .comments {
+    border: 1px solid #bada55;
+  }
+  
+  .comment {
+    border: 1px solid #cc0000;
+  }
+
+  .labels {
+    display: block;
+    margin-bottom: 10px;
+  }
