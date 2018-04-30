@@ -14,6 +14,10 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    color: rgb(131, 131, 131);
+}
+
 .ctn {
     border: 1px solid rgb(228, 228, 228);
     padding: 20px;
