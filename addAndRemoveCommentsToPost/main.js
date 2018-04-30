@@ -21,9 +21,8 @@
         e.preventDefault();
     }
 
-    
+
     function deleteComment(e) {
-        
         var commentId = parseInt($(this).attr('commentId'), 10);
         for (var i = 0; i < comments.length; i++) {
             if (comments[i].id === commentId) {
@@ -34,22 +33,22 @@
     }
 
     function displayComments() {
-        var commentTemplate = $('.comment').eq(0).clone();
+        var commentTemplate = $('.comment');
         var currentComment;
-        var commentList = $('.comments').empty();
-
+        var commentList = $('.comments');
+        commentList.html('');
         console.log(comments);
 
         for (var i = 0; i < comments.length; i++) {
             currentComment = comments[i];
-            $('img', commentTemplate).attr('src', currentComment.imageUrl);
-            $('p', commentTemplate).text(currentComment.text);
-            $('span', commentTemplate).text(currentComment.email);
-            $('a', commentTemplate).attr('commentId', currentComment.id);
+            var newComment = $('<div>').addClass('comment');
 
-            commentList.prepend(commentTemplate);
+            $('<img>').attr('src', currentComment.imageUrl).appendTo(newComment);
+            $('<p>').text(currentComment.text).appendTo(newComment);
+            $('<span>').text(currentComment.email).appendTo(newComment);
+            $('<a>').attr('href', '#').attr('commentId', currentComment.id).addClass('comment__delete-btn').appendTo(newComment).html('X');
 
-            commentTemplate = commentTemplate.clone();
+            commentList.prepend(newComment);
         }
     }
-})(jQuery);
+})(jQuery);``
